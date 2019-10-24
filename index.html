@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <title>WebAssembly Demo</title>
+  </head>
+  <body>
+    <h1>WebAssembly Demo using C</h1>
+    <p>
+      This demonstrates calling a C function through JS using WASM. We are using a squarer function that squares the input value for this demo. 
+      The C program can be compiled with Emscripten or can be downloaded from <a href="https://mbebenita.github.io/WasmExplorer/">Web Assembly Explorer</a>
+    </p>
+    <p>View <a href="https://github.com/diwanshi/squarer">the repository</a> on GitHub.
+
+    <p>View the demo in your browser:
+    <script src="script.js"></script>
+    
+    <form id="squarerform" accept-charset="utf-8" onsubmit="return false">
+      Number:     <input type="text" id="num">
+      <button type="submit" onclick="squareTheValue()">Square</button>
+    </form>
+    <p>Squared Value: <span id="value"></span></p>
+  </body>
+</html>
